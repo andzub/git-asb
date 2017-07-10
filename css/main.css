@@ -1,0 +1,357 @@
+*::-webkit-input-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+*:-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+*::-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+*:-ms-input-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+li {
+  list-style: none;
+}
+
+body input:focus:required:invalid, body textarea:focus:required:invalid {}
+
+body input:required:valid, body textarea:required:valid {}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/**** HEADER *****/
+
+#header {
+  width: 100%;
+  height: 670px;
+  background-image: url('/img/house_42.jpg');
+  background-attachment: fixed;
+}
+
+.headerWrapper {
+  height: 100%;
+  background: rgba(0, 0, 0, 1);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.73) 41%, rgba(0, 0, 0, 0.35) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 1)), color-stop(41%, rgba(0, 0, 0, 0.73)), color-stop(100%, rgba(0, 0, 0, 0.35)));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.73) 41%, rgba(0, 0, 0, 0.35) 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.73) 41%, rgba(0, 0, 0, 0.35) 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.73) 41%, rgba(0, 0, 0, 0.35) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.73) 41%, rgba(0, 0, 0, 0.35) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0);
+}
+
+.headerContainer {
+  max-width: 1200px;
+  height: inherit;
+  margin: 0 auto;
+}
+
+.headerTop {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.headerTop__list {
+  display: flex;
+  margin-right: 10px;
+}
+
+.headerTop__list-item {
+  margin: 10px;
+  font-size: 0.8em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.fa-envelope {
+  margin-right: 5px;
+}
+
+.fa-mobile {
+  margin-right: 5px;
+}
+
+.headerMiddle {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.headerMiddle__logoName {
+  width: 20%;
+  margin-left: 10px;
+}
+
+.headerMiddle__name {
+  font-family: "RobotoLight", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: #FF8000;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.headerMiddle__nav {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.headerMiddle__nav-list {
+  display: flex;
+}
+
+.headerMiddle__list-item a {
+  margin: 10px;
+  padding: 5px 10px;
+  color: #fff;
+  font-weight: 100;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  border-bottom: solid 2px transparent;
+  transition: border 0.5s;
+}
+
+.headerMiddle__list-item a:hover {
+  border-bottom: solid 2px #ff8000;
+}
+
+.headerBottom {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.headerBottom__title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 800;
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.headerBottom__description {
+  text-transform: uppercase;
+  font-family: "Robotolight", sans-serif;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.3em;
+  padding: 5px;
+}
+
+.headerBottom__description-line {
+  background: #ff8000;
+  border: 0;
+  width: 200px;
+  height: 3px;
+  margin-top: -15px;
+}
+
+.fa-angle-double-down {
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 50px;
+}
+
+
+/***** CONTENT *****/
+
+#content {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  flex-grow: 1;
+}
+
+.contentContainer {
+  /*max-width: 1200px;
+  height: inherit;
+  margin: 0 auto;*/
+}
+
+.content__title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #454545;
+  text-align: center;
+  margin: 0;
+}
+
+.content__line {
+  width: 200px;
+  height: 3px;
+  background: #ff8000;
+  border: 0;
+  margin-top: 5px;
+}
+
+
+/***** OURACTIVITY *****/
+
+.ourActivity {
+  width: 100%;
+  height: auto;
+  padding: 40px 0;
+}
+
+.ourWork__description {
+  text-align: center;
+}
+
+.ourActivity__box {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ourActivity__item {
+  width: 350px;
+  height: 180px;
+  margin: 0.5%;
+  padding: 5px;
+  background: #d1d1d1;
+  transition: box-shadow 0.4s;
+}
+
+.ourActivity__item:hover {
+  -webkit-box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.75);
+}
+
+.ourActivity__item-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ourActivity__item-btn {}
+
+.ourActivity__item-title {
+  text-align: center;
+}
+
+
+/***** WHYCHOOSEUS *****/
+
+.whyChooseUs {
+  width: 100%;
+  height: auto;
+  padding: 40px 0;
+}
+
+.whyChooseUs__box {
+  width: 100%;
+  height: 550px;
+  background-image: url('/img/meeting.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.whyChooseUs__description {
+  font-size: 2.6em;
+  width: 50%;
+  margin-left: 100px;
+  color: #fff;
+}
+
+
+/***** OURWORK *****/
+
+.ourWork {
+  width: 100%;
+  height: auto;
+  padding: 40px 0;
+  background: #efefef;
+}
+
+.ourWork__box {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ourWork__item {
+  width: 25%;
+  height: 200px;
+  border: solid 1px black;
+  position: relative;
+  overflow: hidden;
+}
+
+.ourWork__item:hover .ourWork__item-hidden {
+  bottom: 0;
+}
+
+.ourWork__item-hidden {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  bottom: -50px;
+  background: black;
+  transition: bottom 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+
+/***** FOOTER *****/
+
+#footer {
+  width: 100%;
+  min-height: 100px;
+  background: #454545;
+}
+
+.hidden {
+  display: none;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: 50% 0;
+  position: relative;
+}
