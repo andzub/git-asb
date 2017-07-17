@@ -159,11 +159,11 @@ body {
 
 .headerBottom__description {
   text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
+  font-family: "RobotoBold", sans-serif;
+  /*font-weight: 100;*/
   color: #fff;
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.2em;
   margin-top: 0;
 }
 
@@ -225,9 +225,10 @@ body {
 }
 
 .ourActivity__box {
-  width: 100%;
+  max-width: 1200px;
   height: auto;
-  margin-top: 30px;
+  margin: auto;
+  padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -266,25 +267,32 @@ body {
 }
 
 .ourActivity__item-title {
-  font-weight: 800;
+  font-weight: 600;
   color: #333;
   font-size: 1em;
-  margin: 5px;
+  margin: 10px 0;
 }
 
 .ourActivity__item-btn {
-  font-weight: 800;
+  font-weight: 600;
   color: #ffaf00;
-  font-size: 0.8em;
+  font-size: 0.9em;
   text-transform: uppercase;
-  margin-top: -15px;
-  margin-left: 5px;
+  margin-left: 155px;
+  /*border: solid 1.5px #ffaf00;*/
+  padding: 3px 8px;
+  border-radius: 2px;
+  transition: all 0.4s;
 }
 
 .ourActivity__item-btn:hover {
-  border-bottom: solid 1px #ffaf00;
+  /*border-bottom: solid 1px #ffaf00;*/
+  background: #ffaf00;
+  color: #fff;
 }
-
+.fa-angle-double-right {
+  margin-left: 3px;
+}
 .project {}
 
 .technic {}
