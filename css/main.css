@@ -189,7 +189,7 @@ body {
 }
 
 .contentContainer {
-  max-width: 1500px;
+  max-width: 1400px;
   height: inherit;
   margin: 0 auto;
 }
@@ -198,7 +198,7 @@ body {
   font-size: 27px;
   font-weight: 800;
   color: #333;
-  margin: 0 40px;
+  margin: 0 100px;
 }
 
 .content__line {
@@ -207,7 +207,7 @@ body {
   background: #ffaf00;
   border: 0;
   margin-top: 10px;
-  margin-left: 40px;
+  margin-left: 100px;
 }
 
 
@@ -278,9 +278,9 @@ body {
   color: #ffaf00;
   font-size: 0.9em;
   text-transform: uppercase;
-  margin-left: 155px;
+  margin-left: 150px;
   /*border: solid 1.5px #ffaf00;*/
-  padding: 3px 8px;
+  padding: 5px 10px;
   border-radius: 2px;
   transition: all 0.4s;
 }
@@ -363,7 +363,7 @@ body {
 }
 .ourWork__description {
   float: left;
-  margin: 0 40px;
+  margin: 0 100px;
   color: #333;
   font-weight: 600;
   font-size: 1em;
@@ -403,12 +403,26 @@ body {
 /***** OURPARTNER *****/
 .ourPartner {
   width: 100%;
-  height: 500px;
+  height: auto;
   padding: 40px 0;
   background: #fff;
 }
 .ourPartner__box {
-
+  max-width: 1200px;
+  height: auto;
+  margin: auto;
+  padding: 20px;
+}
+.ourPartner__content {
+  width: 100%;
+}
+.ourPartner__content, tr, td {
+  border: solid 1px #d1d1d1;
+  padding: 50px;
+}
+.ourPartner__content, td {
+  text-align: center;
+  color: #888;
 }
 /***** FOOTER *****/
 
