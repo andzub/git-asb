@@ -1,5 +1,25 @@
 $(document).ready(function() {
 
+	// $('.headerMiddle__list-item a').each(function () {
+	// if (this.href == location.href) $(this).parent().addClass('active');
+	// });
+
+	 $('.headerMiddle__list-item a').each(function () {             // получаем все нужные нам ссылки
+        var location = window.location.href; // получаем адрес страницы
+        var link = this.href;                // получаем адрес ссылки
+        if(location == link) {               // при совпадении адреса ссылки и адреса окна
+            $(this).addClass('active');  //добавляем класс
+        }
+    });
+
+	$('.headerPageMiddle__list-item a').each(function () {             // получаем все нужные нам ссылки
+        var location = window.location.href; // получаем адрес страницы
+        var link = this.href;                // получаем адрес ссылки
+        if(location == link) {               // при совпадении адреса ссылки и адреса окна
+            $(this).addClass('active');  //добавляем класс
+        }
+    });
+
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {
 		ga("send", "event", "goal", "goal");
