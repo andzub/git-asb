@@ -619,28 +619,28 @@ box-shadow: 0px 8px 29px 0px rgba(0,0,0,0.3);
 .aboutContent__text {
   color: #333;
   margin: 30px 0;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 .aboutContent__activity-item {
   list-style: disc;
   margin: 3px;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 .aboutContent__work-item {
   list-style: disc;
   margin: 3px;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 .aboutContent__customer-item {
   list-style: disc;
   margin: 3px;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 /***** PAGE SERVICE *****/
 /***** CONTENT *****/
 .serviceContent__container {
-  max-width: 1100px;
+  max-width: 1000px;
   height: auto;
   margin: 0 auto;
   padding: 40px 0;
@@ -676,6 +676,7 @@ box-shadow: 0px 8px 29px 0px rgba(0,0,0,0.3);
 .serviceContent__line {
   background: #ddd;
   height: 1px;
+  border: 0;
 }
 /***** FOOTER *****/
 
