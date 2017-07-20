@@ -496,11 +496,11 @@ box-shadow: 0px 8px 29px 0px rgba(0,0,0,0.3);
 }
 .team {
   max-width: 750px;
-  margin-right: 10%; 
+  margin-right: 10%;
 }
 .skills {
   max-width: 750px;
-  margin-left: 10%; 
+  margin-left: 10%;
 }
 
 /***** OUR WORK *****/
@@ -537,7 +537,7 @@ box-shadow: 0px 8px 29px 0px rgba(0,0,0,0.3);
 }
 .ourWork__item img {
   width: 100%;
-  height: 100%;
+  height: auto;
   transition: margin-top 0.2s ease-out;
 }
 .ourWork__item img:hover {
@@ -640,7 +640,7 @@ box-shadow: 0px 8px 29px 0px rgba(0,0,0,0.3);
 /***** PAGE SERVICE *****/
 /***** CONTENT *****/
 .serviceContent__container {
-  width: 1100px;
+  max-width: 1100px;
   height: auto;
   margin: 0 auto;
   padding: 40px 0;
@@ -651,10 +651,26 @@ box-shadow: 0px 8px 29px 0px rgba(0,0,0,0.3);
   font-weight: 800;
 }
 .serviceContent__item {
-  margin: 40px 0;
+  max-width: inherit;
+  height: inherit;
+  margin: 20px 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.serviceContent__item-title {
+  font-size: 1.6em;
+  color: #333;
+}
+.serviceContent__item-text {
+  font-size: 0.9em;
+  color: #333;
+  margin-top: 30px;
 }
 .serviceContent__item img {
-  max-width: 500px;
+  max-width: 700px;
   height: auto;
 }
 .serviceContent__line {
