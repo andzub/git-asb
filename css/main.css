@@ -141,15 +141,14 @@ body {
   font-weight: 800;
   letter-spacing: 1px;
   font-size: 0.75em;
-  border-bottom: solid 2px transparent;
-  transition: border 0.5s;
+  transition: color 0.5s;
 }
 
 .headerMiddle__list-item a:hover {
-  border-bottom: solid 2px #ff8100;
+  color: #ff8100;
 }
 .headerMiddle__list-item a.active {
-  border-bottom: solid 2px #ff8100;
+  color: #ff8100;
 }
 .headerBottom {
   width: 100%;
@@ -163,7 +162,7 @@ body {
 .headerBottom__title {
   text-transform: uppercase;
   text-align: center;
-  font-size: 2.6em;
+  font-size: 2.8em;
   color: #fff;
   letter-spacing: 1px;
   font-family: "Roboto", sans-serif;
@@ -178,7 +177,7 @@ body {
   color: #fff;
   text-align: center;
   font-size: 1.3em;
-  margin-top: 0;
+  margin-top: 10px;
 }
 
 .headerBottom__link {
@@ -186,7 +185,7 @@ body {
   background: #ff8100;
   color: #fff;
   border-radius: 3px;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 .headerBottom__link:hover {
   background: #ff9000;
@@ -277,15 +276,14 @@ body {
   font-weight: 800;
   letter-spacing: 1px;
   font-size: 0.75em;
-  border-bottom: solid 2px transparent;
-  transition: border 0.5s;
+  transition: color 0.5s;
 }
 
 .headerPageMiddle__list-item a:hover {
-  border-bottom: solid 2px #fff;
+  color: #333;
 }
 .headerPageMiddle__list-item a.active {
-  border-bottom: solid 2px #fff;
+  color: #333;
 }
 /***** CONTENT *****/
 
@@ -432,23 +430,6 @@ box-shadow: 0px 8px 29px 0px rgba(0,0,0,0.3);
 .fa-angle-double-right {
   margin-left: 3px;
 }
-.project {}
-
-.technic {}
-
-.stall {}
-
-.metal {}
-
-.job {}
-
-.fences {}
-
-.facade {}
-
-.architecture {}
-
-.interior3d {}
 
 
 /***** WHY CHOOSE US *****/
@@ -590,19 +571,23 @@ box-shadow: 0px 8px 29px 0px rgba(0,0,0,0.3);
   max-width: 1200px;
   height: auto;
   margin: auto;
-  padding: 15px;
 }
 .ourPartner__content {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.ourPartner__content, tr, td {
+.ourPartner__content li {
+  width: 220px;
+  height: 120px;
+  margin: 10px;
   border: solid 1px #d1d1d1;
-  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.ourPartner__content, td {
-  text-align: center;
-  color: #888;
-}
+
 /***** PAGE ABOUT *****/
 /***** CONTENT *****/
 .aboutContent__container {
