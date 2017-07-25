@@ -1,8 +1,12 @@
 $(document).ready(function() {
 
-	// $('.headerMiddle__list-item a').each(function () {
-	// if (this.href == location.href) $(this).parent().addClass('active');
-	// });
+	$('.serviceContent__readMore').click(function() {
+		$(this).next('.serviceContent__hidden').slideToggle(600);
+	});
+
+	$('.serviceContent__item-mainSubtitle').click(function() {
+		$(this).next('.serviceContent__item-hidden').slideToggle(600);
+	});
 
 	 $('.headerMiddle__list-item a').each(function () {             // получаем все нужные нам ссылки
         var location = window.location.href; // получаем адрес страницы

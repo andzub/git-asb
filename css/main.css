@@ -114,10 +114,11 @@ body {
   height: 80px;
 }
 .headerMiddle__name a {
-  font-weight: 800;
-  font-size: 1em;
+  font-weight: 100;
+  font-size: 1.1em;
   color: #ff8100;
-  background: #333;
+  /*background: #ff8100;*/
+  border: solid 2px #ff8100;
   padding: 5px 10px;
   text-transform: uppercase;
   border-radius: 2px;
@@ -249,10 +250,11 @@ body {
   margin-top: 0;
 }
 .headerPageMiddle__name a {
-  font-weight: 800;
-  font-size: 1em;
-  color: #ff8100;
-  background: #333;
+  font-weight: 100;
+  font-size: 1.1em;
+  color: #fff;
+  border: solid 2px #fff;
+  /*background: #333;*/
   padding: 5px 10px;
   text-transform: uppercase;
   border-radius: 2px;
@@ -322,10 +324,9 @@ body {
 .content__line {
   width: 100px;
   height: 3px;
-  background: #ffaf00;
+  background: #ff8100;
   border: 0;
   margin-top: 10px;
-  /*margin-left: 0;*/
 }
 
 
@@ -445,24 +446,21 @@ box-shadow: 0px 8px 29px 0px rgba(0,0,0,0.3);
 
 .whyChooseUs__box {
   width: 100%;
-  height: 500px;
+  height: 550px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.3);
 
 }
 
 .whyChooseUs__title {
   font-size: 1.5em;
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
   color: #fff;
   text-transform: uppercase;
-  margin: 0 38% 0 80px;
-  border: solid 1px #fff;
-  width: 320px;
+  margin: 0 38% 10px 80px;
+  width: 350px;
   text-align: center;
   padding: 3px 8px;
 }
@@ -598,7 +596,7 @@ box-shadow: 0px 8px 29px 0px rgba(0,0,0,0.3);
 }
 .aboutContent__title {
   text-align: center;
-  font-size: 2em;
+  font-size: 2.2em;
   font-weight: 800;
 }
 .aboutContent__text {
@@ -625,7 +623,7 @@ box-shadow: 0px 8px 29px 0px rgba(0,0,0,0.3);
 /***** PAGE SERVICE *****/
 /***** CONTENT *****/
 .serviceContent__container {
-  max-width: 1000px;
+  max-width: 1100px;
   height: auto;
   margin: 0 auto;
   padding: 40px 0;
@@ -633,31 +631,96 @@ box-shadow: 0px 8px 29px 0px rgba(0,0,0,0.3);
 }
 .serviceContent__title {
   text-align: center;
-  font-size: 2em;
+  font-size: 2.2em;
   font-weight: 800;
 }
-.serviceContent__item {
+.serviceContent__item-box {
   max-width: inherit;
   height: inherit;
   margin: 20px 0;
+  padding: 5px;
   overflow: hidden;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 .serviceContent__item-title {
-  font-size: 1.6em;
+  font-size: 1.75em;
   color: #333;
+}
+.serviceContent__readMore {
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ff8100;
+  cursor: pointer;
+  position: relative;
+}
+.serviceContent__readMore:hover {
+  text-decoration: underline;
+}
+.fa-arrow-down {
+  display: none;
+  position: absolute;
+  left: 55px;
+  top: 27px;
+  color: #ff8100;
+}
+.serviceContent__hidden {
+  max-width: inherit;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+  margin-top: -10px; 
+}
+.serviceContent__line-title {
+  width: 150px;
+  height: 3px;
+  background: #ff8100;
+  border: 0;
+  margin-top: -10px;
+  margin-bottom: 25px;
+}
+.serviceContent__item-mainSubtitle {
+  font-size: 1.25em;
+  position: relative;
+  text-align: center;
+  margin: 10px;
+}
+.serviceContent__item-mainSubtitle:hover {
+  cursor: pointer;
+}
+.fa-caret-down {
+  color: #333;
+  margin: 8px;
+}
+.fa-caret-down:hover {
+  cursor: pointer;
+}
+.serviceContent__item-hidden {
+  max-width: inherit;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}
+.serviceContent__item-subtitle {
+  font-size: 1.05em;
+  margin-bottom: 0;
 }
 .serviceContent__item-text {
-  font-size: 0.9em;
+  font-size: 1.05em;
   color: #333;
-  margin-top: 30px;
 }
-.serviceContent__item img {
-  max-width: 600px;
-  height: auto;
+.serviceContent__item-box img {
+  max-width: auto;
+  max-height: 300px;
+  margin-bottom: 10px;
+}
+.serviceContent__item-list li {
+  list-style: disc;
 }
 .serviceContent__line {
   background: #ddd;
@@ -721,6 +784,10 @@ box-shadow: 0px 8px 29px 0px rgba(0,0,0,0.3);
   text-align: center;
 }
 .footerName {
+  font-weight: 100;
+  padding: 5px 10px;
+  border-radius: 2px;
+  border: solid 2px #ff8100;
   color: #ff8100;
 }
 /**** EXTRA *****/
