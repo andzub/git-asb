@@ -112,10 +112,11 @@ body {
 .headerMiddle__logoName img {
   width: auto;
   height: 80px;
+  margin-top: -40px;
 }
 .headerMiddle__name a {
   font-weight: 100;
-  font-size: 1.1em;
+  font-size: 1em;
   color: #ff8100;
   /*background: #ff8100;*/
   border: solid 2px #ff8100;
@@ -170,6 +171,9 @@ body {
   font-weight: 100;
   margin: 0;
 }
+/*.headerBottom__title span {
+  color: #ff8100;
+}*/
 
 .headerBottom__description {
   text-transform: uppercase;
@@ -246,12 +250,17 @@ body {
   width: 20%;
   margin-left: 10px;
 }
+.headerPageMiddle__logoName img {
+  width: auto;
+  height: 80px;
+  margin-top: -40px;
+}
 .headerPageMiddle__name {
   margin-top: 0;
 }
 .headerPageMiddle__name a {
   font-weight: 100;
-  font-size: 1.1em;
+  font-size: 1em;
   color: #fff;
   border: solid 2px #fff;
   /*background: #333;*/
@@ -580,7 +589,7 @@ box-shadow: 0px 8px 29px 0px rgba(0,0,0,0.3);
   width: 220px;
   height: 120px;
   margin: 10px;
-  border: solid 1px #d1d1d1;
+  color: #979797;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -672,7 +681,7 @@ box-shadow: 0px 8px 29px 0px rgba(0,0,0,0.3);
   flex-direction: column;
   align-items: center;
   display: none;
-  margin-top: -10px; 
+  margin-top: -10px;
 }
 .serviceContent__line-title {
   width: 150px;
@@ -716,11 +725,16 @@ box-shadow: 0px 8px 29px 0px rgba(0,0,0,0.3);
 }
 .serviceContent__item-box img {
   max-width: auto;
-  max-height: 300px;
+  max-height: 400px;
   margin-bottom: 10px;
 }
 .serviceContent__item-list li {
   list-style: disc;
+}
+.serviceContent__hide {
+  text-transform: uppercase;
+  color: #ff8100;
+  cursor: pointer;
 }
 .serviceContent__line {
   background: #ddd;
@@ -735,6 +749,7 @@ box-shadow: 0px 8px 29px 0px rgba(0,0,0,0.3);
 }
 .fa-arrow-up {
   color: #ff8100;
+  margin: 5px;
 }
 /***** FOOTER *****/
 
